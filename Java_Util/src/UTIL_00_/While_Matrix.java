@@ -3,7 +3,7 @@ package UTIL_00_;
 import util.Linhas;
 
 public class While_Matrix {
-	public static void VetorMatrix_Run() {
+	public static void While_Run() {
 		Linhas linhas = new Linhas();
 		String collec = "\n\t Nome \n";
 		System.err.println(collec);

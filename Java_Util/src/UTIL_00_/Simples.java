@@ -3,7 +3,7 @@ package UTIL_00_;
 import util.Linhas;
 
 public class Simples {
-	public String Simples_Run() {
+	public static void Simples_Run() {
 
 		Linhas linhas = new Linhas();
 		String collec = "\n\t Nome\n";
@@ -18,7 +18,7 @@ public class Simples {
 		linhas.run_Caracteres();
 		Import_3S.run_Import_3S();
 
-		return "_________________________________________";
+
 	}
 }
 

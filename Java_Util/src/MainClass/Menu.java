@@ -3,6 +3,7 @@ package MainClass;
 import java.util.Scanner;
 
 import UTIL_01_Collection.Run_Collection;
+import UTIL_02_List.Run_List;
 import util.LimparConsole;
 import util.Pausar;
 
@@ -67,12 +68,13 @@ public class Menu {
 
 			switch (choice) {
 			case 1:
-				Run_Collection.Start_Collection();				
+				Run_Collection.Start_Collection();	
 				pausar.run_Pause();
 				clear.CleanConsole_Run();
 				break;
 
 			case 2:
+				Run_List.Start_List();
 				pausar.run_Pause();
 				clear.CleanConsole_Run();
 				break;
@@ -203,6 +205,7 @@ public class Menu {
 			
 			case 31: // Sair
 				System.out.println("Encerrando o programa...");
+				System.exit(0);
 				break;
 			
 			default:

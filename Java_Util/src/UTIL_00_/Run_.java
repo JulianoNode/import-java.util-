@@ -3,19 +3,14 @@ package UTIL_00_;
 import java.util.Scanner;
 
 import MainClass.Menu;
-import UTIL_01_Collection.For_Matrix;
-import UTIL_01_Collection.If_Else_IF;
-import UTIL_01_Collection.Simples;
-import UTIL_01_Collection.Vetor_;
-import UTIL_01_Collection.While_Matrix;
 import util.LimparConsole;
 import util.Pausar;
 import util.VoutarMenu;
 
-public class Run_Collection {
+public class Run_ {
 
 	@SuppressWarnings("unused")
-	public String Start_Collection() throws Exception {
+	public static void Start_() throws Exception {
 
 		Pausar pausar = new Pausar();
 		LimparConsole clear = new LimparConsole();
@@ -73,6 +68,5 @@ public class Run_Collection {
 			}
 		} while (choice != 7);
 		scanner.close();
-		return "";
 	}
 }

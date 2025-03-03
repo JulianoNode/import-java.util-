@@ -3,7 +3,7 @@ package UTIL_00_;
 import util.Linhas;
 
 public class Vetor_ {
-	public static void  While_Run() {
+	public static void  Vetor_Run() {
 
 		Linhas linhas = new Linhas();
 		String collec = "\n\t Nome \n";
