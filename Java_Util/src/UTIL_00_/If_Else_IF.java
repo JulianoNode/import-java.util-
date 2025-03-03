@@ -1,0 +1,38 @@
+package UTIL_00_;
+import util.Linhas;
+
+public class If_Else_IF {
+	public static void If_Else_IF_Run() {
+
+		Linhas linhas = new Linhas();
+		String collec = "\n\tNemo\n";
+		System.err.println(collec);
+
+		linhas.run_Caracteres();
+		Import_1IF.run_Import_1IF();
+
+		linhas.run_Caracteres();
+		Import_2IF.run_Import_2IF();
+
+		linhas.run_Caracteres();		
+		Import_3IF.run_Import_3IF();
+	}
+}
+
+class Import_1IF {
+	public static void run_Import_1IF() {
+		System.err.println("\t\t1. \n");
+	}
+}
+
+class Import_2IF {
+	public static void run_Import_2IF() {
+		System.err.println("\t\t2.\n");				
+	}
+}
+
+class Import_3IF {
+	public static void run_Import_3IF() {
+		System.err.println("\t\t3. \n");		
+	}
+}
