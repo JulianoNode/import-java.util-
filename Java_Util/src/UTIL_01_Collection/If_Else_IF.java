@@ -9,7 +9,7 @@ public class If_Else_IF {
 	public static void If_Else_IF_Run() {
 
 		Linhas linhas = new Linhas();
-		String collec = "\n\tCollection<E>: A interface raiz para a hierarquia de coleções.\n";
+		String collec = "\n\t Collection<E>: A interface raiz para a hierarquia de coleções. \n";
 		System.err.println(collec);
 
 		linhas.run_Caracteres();

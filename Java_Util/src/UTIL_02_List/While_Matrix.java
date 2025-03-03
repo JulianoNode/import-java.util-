@@ -9,7 +9,7 @@ import util.Linhas;
 public class While_Matrix {
 	public static void While_Run() {
 		Linhas linhas = new Linhas();
-		String collec = "\n\t Nome \n";
+		String collec = "\n\t List: Representa uma lista ordenada. \n";
 		System.err.println(collec);
 
 		linhas.run_Caracteres();

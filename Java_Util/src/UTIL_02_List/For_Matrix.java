@@ -8,7 +8,7 @@ public class For_Matrix {
 	public static void For_Run() {
 
 		Linhas linhas = new Linhas();
-		String collec = "\n\t Nome.\n";
+		String collec = "\n\t List: Representa uma lista ordenada.\n";
 		System.err.println(collec);
 
 		linhas.run_Caracteres();

@@ -5,7 +5,7 @@ public class If_Else_IF {
 	public static void If_Else_IF_Run() {
 
 		Linhas linhas = new Linhas();
-		String collec = "\n\tNemo\n";
+		String collec = "\n\t Nemo \n";
 		System.err.println(collec);
 
 		linhas.run_Caracteres();

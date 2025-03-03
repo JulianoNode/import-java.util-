@@ -1,4 +1,4 @@
-package UTIL_02_List;
+package UTIL_03_Set;
 
 import java.util.Scanner;
 
@@ -7,17 +7,18 @@ import util.LimparConsole;
 import util.Pausar;
 import util.VoutarMenu;
 
-public class Run_List {
+public class Run_Set {
+
 	@SuppressWarnings("unused")
-	public static void Start_List() throws Exception {
+	public static void Start_Set() throws Exception {
 
 		Pausar pausar = new Pausar();
 		LimparConsole clear = new LimparConsole();
 		Scanner scanner = new Scanner(System.in);
 
 		// Vetor de opções do menu
-		String[] menuOptions = { "📌 List = Simple", "📌 List = If e else if", "📌 List = For com Matrix",
-				"📌 List = do while com Matrix", "📌 List = Vetor", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
+		String[] menuOptions = { "📌 Set = Simple", "📌 Set = If e else if", "📌 Set = For com Matrix",
+				"📌 Set = do while com Matrix", "📌 Set = Vetor", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
 
 		int choice;
 		do {
@@ -59,6 +60,7 @@ public class Run_List {
 				Menu.Meun_Run();
 
 				break;
+
 			case 7:
 				System.exit(0);
 				break;
@@ -69,6 +71,5 @@ public class Run_List {
 			}
 		} while (choice != 7);
 		scanner.close();
-
 	}
 }

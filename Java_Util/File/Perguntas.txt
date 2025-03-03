@@ -1,0 +1,15 @@
+5 código simples em Java usando o comando util.Set usando @Annotation Type * @interface com valores*
+
+2 codigo mais Annotation @interface em java usando o comando java.util.Set, usando if ,if e else com for 
+
+5 código simples em Java usando o comando util.Set usando record
+
+codigo simples em java usando o comando java.util.List, usando vetor e matrix, do while, switch case, if if if else, for, usando String
+
+5 codigo mais Annotation @interface em java usando o comando java.util.Set, usando if ,else if, else if com for e do while 
+
+codigo mais Annotation @interface em java usando o comando java.util.Set, usando switch case com for e do while 
+
+1 codigo mais Enum com Annotation @interface  em java usando o comando java.util.Set, usando switch case com for, do while mais Vetor ?
+
+codigo mais Enum com Annotation Login  @interface  em java usando o comando java.util.Set, usando switch case com for, do while mais Vetor ?

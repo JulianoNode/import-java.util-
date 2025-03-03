@@ -17,9 +17,8 @@ public class Run_ {
 		Scanner scanner = new Scanner(System.in);
 
 		// Vetor de opções do menu
-		String[] menuOptions = { "📌  = Simple", "📌  = If e else if",
-				"📌  = For com Matrix", "📌  = do while com Matrix", "📌  = Vetor",
-				"⏪ Voutar para o menu" };
+		String[] menuOptions = { "📌  = Simple", "📌  = If e else if", "📌  = For com Matrix",
+				"📌  = do while com Matrix", "📌  = Vetor", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
 
 		int choice;
 		do {
@@ -60,6 +59,10 @@ public class Run_ {
 				System.out.println("\n\n");
 				Menu.Meun_Run();
 
+				break;
+
+			case 7:
+				System.exit(0);
 				break;
 
 			default:

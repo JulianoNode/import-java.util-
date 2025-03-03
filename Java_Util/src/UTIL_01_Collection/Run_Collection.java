@@ -9,7 +9,7 @@ import util.VoutarMenu;
 
 public class Run_Collection {
 
-	public static void  Start_Collection() throws Exception {
+	public static void Start_Collection() throws Exception {
 
 		@SuppressWarnings("unused")
 		Pausar pausar = new Pausar();
@@ -20,7 +20,7 @@ public class Run_Collection {
 		// Vetor de opções do menu
 		String[] menuOptions = { "📌 Collection = Simple", "📌 Collection = If e else if",
 				"📌 Collection = For com Matrix", "📌 Collection = do while com Matrix", "📌 Collection = Vetor",
-				"⏪ Voutar para o menu" };
+				"⏪ Voutar para o menu", "👋 Sair 👋 \n" };
 
 		int choice;
 		do {
@@ -60,6 +60,9 @@ public class Run_Collection {
 				voutarMenu.run_CaracteresMenu_Red();
 				System.out.println("\n\n");
 				Menu.Meun_Run();
+				break;
+			case 7:
+				System.exit(0);
 				break;
 
 			default:

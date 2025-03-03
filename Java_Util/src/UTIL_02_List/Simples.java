@@ -9,7 +9,7 @@ public class Simples {
 	public static void Simples_Run() {
 
 		Linhas linhas = new Linhas();
-		String collec = "\n\t Nome\n";
+		String collec = "\n\t List: Representa uma lista ordenada.\n";
 		System.err.println(collec);
 
 		linhas.run_Caracteres();
