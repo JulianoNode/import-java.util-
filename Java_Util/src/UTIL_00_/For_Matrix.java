@@ -20,7 +20,7 @@ public class For_Matrix {
 
 	}
 }
-
+//Corpo da Calsse _______________________________
 class Import_1F {
 	public static void run_Import_1F() {
 		System.err.println("\t\t1.\n");
@@ -28,6 +28,7 @@ class Import_1F {
 	}
 }
 
+//Corpo da Calsse _______________________________
 class Import_2F {
 	public static void run_Import_2F() {
 		System.err.println("\t\t2. \n");
@@ -35,6 +36,7 @@ class Import_2F {
 	}
 }
 
+//Corpo da Calsse _______________________________
 class Import_3F {
 	public static void run_Import_3F() {
 		System.err.println("\t\t3.\n");

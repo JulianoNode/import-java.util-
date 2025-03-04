@@ -1,15 +1,35 @@
 5 código simples em Java usando o comando util.Set usando @Annotation Type * @interface com valores*
 
-2 codigo mais Annotation @interface em java usando o comando java.util.Set, usando if ,if e else com for 
+2 codigo mais Annotation @interface em java usando o comando java.util.Set, usando if , else if, else if  com for 
 
 5 código simples em Java usando o comando util.Set usando record
 
-codigo simples em java usando o comando java.util.List, usando vetor e matrix, do while, switch case, if if if else, for, usando String
+codigo simples em java usando o comando java.util.List, usando vetor e matrix, do while, switch case, if , else if, else if , for, usando String
 
-5 codigo mais Annotation @interface em java usando o comando java.util.Set, usando if ,else if, else if com for e do while 
+5 codigo mais Annotation @interface em java usando o comando java.util.Set, usando if , else if, else if  com for e do while 
 
 codigo mais Annotation @interface em java usando o comando java.util.Set, usando switch case com for e do while 
 
 1 codigo mais Enum com Annotation @interface  em java usando o comando java.util.Set, usando switch case com for, do while mais Vetor ?
 
 codigo mais Enum com Annotation Login  @interface  em java usando o comando java.util.Set, usando switch case com for, do while mais Vetor ?
+
+5 código simples com o tema é temperatura em Java, usando o comando util.Map, usando enum e @Annotation Type * @interface *
+
+5 código usando if , else if, for, com o tema é temperatura em Java, usando o comando util.Map, usando enum e @Annotation Type * @interface *
+
+código usando for, do while  com o tema é temperatura em Java, usando o comando util.Map, usando enum e @Annotation Type * @interface com 4 string 2 float*
+
+código usando vetor e matrix, do while, switch case, if , else if, else if , for,  com o tema é login em Java, usando o comando util.Map, usando * Enum 6 string * 
+
+
+
+
+
+
+
+
+
+
+
+

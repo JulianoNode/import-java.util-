@@ -5,6 +5,7 @@ import java.util.Scanner;
 import UTIL_01_Collection.Run_Collection;
 import UTIL_02_List.Run_List;
 import UTIL_03_Set.Run_Set;
+import UTIL_04_Map.Run_Map;
 import util.LimparConsole;
 import util.Pausar;
 
@@ -87,6 +88,7 @@ public class Menu {
 				break;
 
 			case 4:
+				Run_Map.Start_Map();
 				pausar.run_Pause();
 				clear.CleanConsole_Run();
 				break;

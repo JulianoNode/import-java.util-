@@ -98,6 +98,7 @@ class Import_2F {
 		}
 	}
 
+	@SuppressWarnings("static-access")
 	public static void run_Import_2F() {
 		System.err.println("\t\t2. Criação de uma instância da classe MatrixOperations \n");
 		int rows = 11;
