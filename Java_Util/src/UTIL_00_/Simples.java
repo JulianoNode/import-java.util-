@@ -22,7 +22,7 @@ public class Simples {
 	}
 }
 
-//Corpo da Calsse _______________________________
+//Corpo da Classe _______________________________
 class Import_1S {
 	public static void run_Import_1S() {
 		System.err.println("\t\t1. \n");
@@ -30,7 +30,7 @@ class Import_1S {
 	}
 }
 
-//Corpo da Calsse _______________________________
+//Corpo da Classe _______________________________
 class Import_2S {
 	public static void run_Import_2S() {
 		System.err.println("\t\t2. \n");
@@ -38,7 +38,7 @@ class Import_2S {
 	}
 }
 
-//Corpo da Calsse _______________________________
+//Corpo da Classe _______________________________
 class Import_3S {
 	public static void run_Import_3S() {
 		System.err.println("\t\t3. \n");

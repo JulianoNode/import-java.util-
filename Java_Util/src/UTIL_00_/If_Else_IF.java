@@ -19,21 +19,21 @@ public class If_Else_IF {
 	}
 }
 
-//Corpo da Calsse _______________________________
+//Corpo da Classe _______________________________
 class Import_1IF {
 	public static void run_Import_1IF() {
 		System.err.println("\t\t1. \n");
 	}
 }
 
-//Corpo da Calsse _______________________________
+//Corpo da Classe _______________________________
 class Import_2IF {
 	public static void run_Import_2IF() {
 		System.err.println("\t\t2.\n");				
 	}
 }
 
-//Corpo da Calsse _______________________________
+//Corpo da Classe _______________________________
 class Import_3IF {
 	public static void run_Import_3IF() {
 		System.err.println("\t\t3. \n");		

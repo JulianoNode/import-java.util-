@@ -1,4 +1,7 @@
-# https://emojis.wiki 
+# https://emojis.wiki 	Emogis para o prompit
+# https://temp-mail.org/  Email de teste gratuitos
+# https://vizard.ai/workspace Curtes de videos
+
 # import-java.util.🎲
 
 📌☕ Lista Completa das Classes do java.util

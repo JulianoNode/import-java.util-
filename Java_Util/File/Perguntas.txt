@@ -22,6 +22,47 @@ código usando for, do while  com o tema é temperatura em Java, usando o comand
 
 código usando vetor e matrix, do while, switch case, if , else if, else if , for,  com o tema é login em Java, usando o comando util.Map, usando * Enum 6 string * 
 
+5 código usando simples switch case, if , else, for,  com o tema é Cliente em Java, usando o comando util.Queue, usando * classe Abstract*  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

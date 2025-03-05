@@ -20,7 +20,7 @@ public class Vetor_ {
 	}
 }
 
-//Corpo da Calsse _______________________________
+//Corpo da Classe _______________________________
 class Import_1V {
 	public static void run_Import_1V() {
 		System.err.println("\t\t1. \n");
@@ -28,7 +28,7 @@ class Import_1V {
 	}
 }
 
-//Corpo da Calsse _______________________________
+//Corpo da Classe _______________________________
 class Import_2V {
 	public static void run_Import_2V() {
 		System.err.println("\t\t2. \n");
@@ -36,7 +36,7 @@ class Import_2V {
 	}
 }
 
-//Corpo da Calsse _______________________________
+//Corpo da Classe _______________________________
 class Import_3V {
 	public static void run_Import_3V() {
 		System.err.println("\t\t3. \n");
