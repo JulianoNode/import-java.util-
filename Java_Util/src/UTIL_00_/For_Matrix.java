@@ -6,7 +6,7 @@ public class For_Matrix {
 	public static void For_Run() {
 
 		Linhas linhas = new Linhas();
-		String collec = "\n\t Nome.\n";
+		String collec = "\n\t Nome \n";
 		System.err.println(collec);
 
 		linhas.run_Caracteres();
@@ -23,7 +23,7 @@ public class For_Matrix {
 //Corpo da Classe _______________________________
 class Import_1F {
 	public static void run_Import_1F() {
-		System.err.println("\t\t1.\n");
+		System.err.println("\t\t1. \n");
 		
 	}
 }

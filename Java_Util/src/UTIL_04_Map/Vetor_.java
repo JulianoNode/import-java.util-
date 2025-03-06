@@ -1,6 +1,8 @@
 package UTIL_04_Map;
 
 import util.Linhas;
+import util.VoutarRun;
+
 import java.util.*;
 
 public class Vetor_ {
@@ -115,8 +117,9 @@ class Import_1V {
 			System.out.println("- " + nome);
 		}
 
-		// Fechar o scanner
-		scanner.close();
+
+		VoutarRun voutarRun = new VoutarRun();
+		voutarRun.run_CaracteresMenu_Red();
 
 	}
 }
@@ -287,7 +290,9 @@ class Import_3V {
 
 		} while (true);
 
-		scanner.close();
+
+		VoutarRun voutarRun = new VoutarRun();
+		voutarRun.run_CaracteresMenu_Red();
 		System.out.println("Programa encerrado.");
 
 	}

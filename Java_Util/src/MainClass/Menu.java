@@ -7,6 +7,7 @@ import UTIL_02_List.Run_List;
 import UTIL_03_Set.Run_Set;
 import UTIL_04_Map.Run_Map;
 import UTIL_05_Queue.Run_Queue;
+import UTIL_06_Deque.Run_Deque;
 import util.LimparConsole;
 import util.Pausar;
 
@@ -101,6 +102,7 @@ public class Menu {
 				break;
 
 			case 6:
+				Run_Deque.Start_Deque();
 				pausar.run_Pause();
 				clear.CleanConsole_Run();
 				break;

@@ -6,6 +6,7 @@ import MainClass.Menu;
 import util.LimparConsole;
 import util.Pausar;
 import util.VoutarMenu;
+import util.VoutarRun;
 
 public class Run_Collection {
 
@@ -70,7 +71,9 @@ public class Run_Collection {
 				break;
 			}
 		} while (choice != 7);
-		scanner.close();
+
+		VoutarRun voutarRun = new VoutarRun();
+		voutarRun.run_CaracteresMenu_Red();
 
 	}
 }

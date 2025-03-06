@@ -1,6 +1,8 @@
 package UTIL_05_Queue;
 
 import util.Linhas;
+import util.VoutarRun;
+
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -130,7 +132,9 @@ class Import_1WM {
 				System.out.println("Opção inválida, tente novamente.");
 			}
 		}
-		scanner.close();
+
+		VoutarRun voutarRun = new VoutarRun();
+		voutarRun.run_CaracteresMenu_Red();
 
 	}
 }

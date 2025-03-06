@@ -1,4 +1,4 @@
-package UTIL_05_Queue;
+package UTIL_06_Deque;
 
 import java.util.Scanner;
 
@@ -6,20 +6,19 @@ import MainClass.Menu;
 import util.LimparConsole;
 import util.Pausar;
 import util.VoutarMenu;
-import util.VoutarRun;
 
-public class Run_Queue {
+public class Run_Deque {
 
 	@SuppressWarnings("unused")
-	public static void Start_Queue() throws Exception {
+	public static void Start_Deque() throws Exception {
 
 		Pausar pausar = new Pausar();
 		LimparConsole clear = new LimparConsole();
 		Scanner scanner = new Scanner(System.in);
 
 		// Vetor de opções do menu
-		String[] menuOptions = { "📌 Queue = Simple", "📌 Queue = If e else if", "📌 Queue = For com Matrix",
-				"📌 Queue = do while com Matrix", "📌 Queue = Vetor", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
+		String[] menuOptions = { "📌 Deque = Simple", "📌 Deque = If e else if", "📌 Deque = For com Matrix",
+				"📌 Deque = do while com Matrix", "📌 Deque = Vetor", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
 
 		int choice;
 		do {
@@ -71,8 +70,8 @@ public class Run_Queue {
 				break;
 			}
 		} while (choice != 7);
-
-		VoutarRun voutarRun = new VoutarRun();
-		voutarRun.run_CaracteresMenu_Red();
+		
+		VoutarMenu voutarMenu = new VoutarMenu();
+		voutarMenu.run_CaracteresMenu_Red();
 	}
 }
