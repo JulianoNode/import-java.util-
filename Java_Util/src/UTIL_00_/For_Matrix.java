@@ -43,3 +43,9 @@ class Import_3F {
 
 	}
 }
+
+//1 Corpo da Classe Abstract e Enum _______________________________
+
+//2 Corpo da Classe Abstract e Enum _______________________________
+
+//3 Corpo da Classe Abstract e Enum _______________________________

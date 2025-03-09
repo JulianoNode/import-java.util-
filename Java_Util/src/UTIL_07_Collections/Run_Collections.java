@@ -1,4 +1,4 @@
-package UTIL_00_;
+package UTIL_07_Collections;
 
 import java.util.Scanner;
 
@@ -8,18 +8,19 @@ import util.Pausar;
 import util.VoutarMenu;
 import util.VoutarRun;
 
-public class Run_ {
+public class Run_Collections {
 
 	@SuppressWarnings("unused")
-	public static void Start_() throws Exception {
+	public static void Start_Collections() throws Exception {
 
 		Pausar pausar = new Pausar();
 		LimparConsole clear = new LimparConsole();
 		Scanner scanner = new Scanner(System.in);
 
 		// Vetor de opções do menu
-		String[] menuOptions = { "📌  = Simple", "📌  = If e else if", "📌  = For com Matrix",
-				"📌  = do while com Matrix", "📌  = Vetor", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
+		String[] menuOptions = { "📌 Collections = Simple", "📌 Collections = If e else if",
+				"📌 Collections = For com Matrix", "📌 Collections = do while com Matrix", "📌 Collections = Vetor",
+				"📌 Collections = ConvertMoedas", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
 
 		int choice;
 		do {
@@ -54,23 +55,26 @@ public class Run_ {
 				Vetor_.Vetor_Run();
 				break;
 
-			case 6: // Voutar para o MEUNU
+			case 6:
+				ConvertMoedas.Run_Convert();
+				break;
+
+			case 7: // Voutar para o MEUNU
 				VoutarMenu voutarMenu = new VoutarMenu();
 				voutarMenu.run_CaracteresMenu_Red();
 				System.out.println("\n\n");
 				Menu.Meun_Run();
 
 				break;
-			case 7:
-				VoutarRun voutarRun = new VoutarRun();
-				voutarRun.run_CaracteresMenu_Red();
+			case 8:
+				System.out.println("Saindo....");
 				break;
 
 			default:
 				System.out.println("Opção inválida. Tente novamente.");
 				break;
 			}
-		} while (choice != 7);
+		} while (choice != 8);
 
 		VoutarRun voutarRun = new VoutarRun();
 		voutarRun.run_CaracteresMenu_Red();

@@ -24,11 +24,11 @@ código usando vetor e matrix, do while, switch case, if , else if, else if , fo
 
 5 código usando simples switch case, if , else, for,  com o tema é Cliente em Java, usando o comando util.Queue, usando * classe Abstract*  
 
+código usando usando if , else if, else if, for, com Matrix e vetor, do While e swifct o tema é crud de Catao de credito em Java, usando o comando util.Collections, usando *6 enum  e classe Abstract* , Metodos a ser emplatados ordenação, busca, sincronização 
 
+código usando usando if , else if, else if, for, com Matrix e vetor, do While e swifct o tema é crud de Catao de credito em Java, usando o comando util.Collections, usando *6 enum  e classe Abstract* , Metodos a ser emplatados ordenação, busca, sincronização 
 
-
-
-
+código usando usando if , else if, else if, for, com Matrix e vetor, do While e swifct o tema é crud de Perfil em Java, usando o comando util.Collections, usando *6 enum  e classe Abstract* , Metodos a ser emplatados ordenação, busca, sincronização 
 
 
 
