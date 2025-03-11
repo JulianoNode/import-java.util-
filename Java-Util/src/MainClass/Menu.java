@@ -9,8 +9,12 @@ import UTIL_04_Map.Run_Map;
 import UTIL_05_Queue.Run_Queue;
 import UTIL_06_Deque.Run_Deque;
 import UTIL_07_Collections.Run_Collections;
+import UTIL_08_Arrays.Run_Arrays;
+import UTIL_09_Iterator.Run_Iterator;
+import UTIL_10_ListInterator.Run_ListIterator;
 import util.LimparConsole;
 import util.Pausar;
+
 
 public class Menu {
 	public static void  Meun_Run() throws Exception {
@@ -27,7 +31,12 @@ public class Menu {
 						"👉 UTIL =  Map<K, V>: Representa um mapeamento de chave-valor.",
 						"👉 UTIL =  Queue<E>: Representa uma fila (FIFO).",
 						"👉 UTIL =  Deque<E>: Representa uma fila dupla (pode adicionar/remover de ambas as extremidades).\n\n"+
-						"\t☕✔️📌 Implementações das Interfaces: \n\n", 
+						"2.\t☕✔️📌 Classes Auxiliares: \n\n", 
+						"👉 UTIL =  Collections: Métodos utilitários para trabalhar com coleções (ex.: ordenação, busca, sincronização).",
+						"👉 UTIL =  Arrays: Métodos utilitários para trabalhar com arrays (ex.: ordenação, busca",
+						"👉 UTIL =  Iterator<E>: Interface para iterar sobre elementos de uma coleção.",
+						"👉 UTIL =  ListIterator<E>: Iterador para listas que permite percorrer em ambas as direções.\n\n"+
+						"3.\t☕✔️📌 Implementações das Interfaces: \n\n", 
 						"👉 UTIL =  ArrayList<E>: Uma lista baseada em array dinâmico.",
 						"👉 UTIL =  LinkedList<E>: Lista duplamente encadeada.",
 						"👉 UTIL =  HashSet<E>: Implementação de Set baseada em tabela de hash.",
@@ -37,23 +46,19 @@ public class Menu {
 						"👉 UTIL =  LinkedHashMap<K, V>: Variante de HashMap que mantém a ordem de inserção.",
 						"👉 UTIL =  TreeMap<K, V>: Implementação de Map ordenada (baseada em árvore).",
 						"👉 UTIL =  PriorityQueue<E>: Fila de prioridade.\n\n"+
-						"\t☕✔️📌 Classes Auxiliares: \n\n", 
-						"👉 UTIL =  Collections: Métodos utilitários para trabalhar com coleções (ex.: ordenação, busca, sincronização).",
-						"👉 UTIL =  Iterator<E>: Interface para iterar sobre elementos de uma coleção.",
-						"👉 UTIL =  ListIterator<E>: Iterador para listas que permite percorrer em ambas as direções.\n\n"+
-						"\t☕✔️📌 Datas e Tempo: \n\n", 
+						"4.\t☕✔️📌 Datas e Tempo: \n\n", 
 						"👉 UTIL =  Date: Representa um ponto no tempo (obsoleto em favor de java.time).",
 						"👉 UTIL =  Calendar: Classe abstrata para manipular datas e horas.",
 						"👉 UTIL =  TimeZone: Representa fusos horários.",
 						"👉 UTIL =  GregorianCalendar: Implementação concreta de Calendar.\n\n"+
-						"\t☕✔️📌 Geradores de Números Aleatórios: \n\n", 
+						"5.\t☕✔️📌 Geradores de Números Aleatórios: \n\n", 
 						"👉 UTIL =  Random: Classe para gerar números aleatórios.",
 						"👉 UTIL =  SplittableRandom: Gerador de números aleatórios para paralelismo eficiente.\n\n"+
-						"\t☕✔️📌 Outras Classes Úteis: \n\n",
+						"6.\t☕✔️📌 Outras Classes Úteis: \n\n",
 						"👉 UTIL =  Scanner: Para entrada de dados (ex.: ler do console, arquivos).",
 						"👉 UTIL =  Properties: Armazena pares chave-valor em arquivos de propriedades.",
 						"👉 UTIL =  Optional<T>: Uma classe que representa um valor que pode ou não estar presente (para evitar null).\n\n"+
-						"\t☕✔️📌 Outras Estruturas de Dados \n\n", 
+						"7.\t☕✔️📌 Outras Estruturas de Dados \n\n", 
 						"👉 UTIL =  BitSet: Uma matriz de bits eficiente.",
 						"👉 UTIL =  Stack<E>: Implementação de pilha baseada em Vector.",
 						"👉 UTIL =  Vector<E>: Lista dinâmica sincronizada (menos usada que ArrayList).\n\n",
@@ -113,14 +118,17 @@ public class Menu {
 				clear.CleanConsole_Run();
 				break;
 			case 8:
+				Run_Arrays.Start_Arrays();
 				pausar.run_Pause();
 				clear.CleanConsole_Run();
 				break;
 			case 9:
+				Run_Iterator.Start_Iterator();
 				pausar.run_Pause();
 				clear.CleanConsole_Run();
 				break;
 			case 10:
+				Run_ListIterator.Start_ListIterator();
 				pausar.run_Pause();
 				clear.CleanConsole_Run();
 				break;
