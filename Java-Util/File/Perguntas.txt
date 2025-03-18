@@ -30,7 +30,7 @@ código usando usando if , else if, else if, for, com Matrix e vetor, do While e
 
 código usando usando if , else if, else if, for, com Matrix e vetor, do While e swifct o tema é crud de Perfil em Java, usando o comando util.Collections, usando *6 enum  e classe Abstract* , Metodos a ser emplatados ordenação, busca, sincronização 
 
-
+código simples usando if, else if, esle if, else e braek, For, do While, switch case, Vetor  com Matrix o tema é tipo de VPN e Endereço na Net Java, usando o comando util.Iterator, usando * 10 enum  e 10 classe Abstract* , Métodos a ser implementados ordenação, busca, sincronizaçã
 
 
 

@@ -16,6 +16,9 @@ public class Vetor_ {
 		System.err.println(collec);
 
 		linhas.run_Caracteres();
+		Import_5V.run_Import_5V();
+		
+		linhas.run_Caracteres();
 		Import_1V.run_Import_1V();
 
 		linhas.run_Caracteres();
@@ -23,7 +26,7 @@ public class Vetor_ {
 
 		linhas.run_Caracteres();
 		Import_3V.run_Import_3V();
-		
+
 		linhas.run_Caracteres();
 		Import_4V.run_Import_4V();
 	}
@@ -627,5 +630,215 @@ class Import_4V {
 
 		VoutarRun voutarRun = new VoutarRun();
 		voutarRun.run_CaracteresMenu_Red();
+	}
+}
+
+// Classes de codigos
+
+//Enum para tipos de hosts
+enum TipoHosts {
+	VPS, DEDICADO, COMPARTILHADO, CLOUD, EDGE, COLOCATION, BARE_METAL, CONTAINER, SERVERLESS, LAMBDA;
+}
+
+//Classe abstrata base para todos os hosts
+abstract class AbstractHosts {
+	String nome;
+	TipoHosts tipo;
+
+	AbstractHosts(String nome, TipoHosts tipo) {
+		this.nome = nome;
+		this.tipo = tipo;
+	}
+
+	abstract void detalhes();
+}
+
+//10 classes abstratas extendendo a base
+abstract class Host1 extends AbstractHosts {
+	Host1(String n) {
+		super(n, TipoHosts.VPS);
+	}
+
+	void detalhes() {
+	}
+}
+
+abstract class Host22 extends AbstractHosts {
+	Host22(String n) {
+		super(n, TipoHosts.DEDICADO);
+	}
+
+	void detalhes() {
+	}
+}
+
+abstract class Host3 extends AbstractHosts {
+	Host3(String n) {
+		super(n, TipoHosts.COMPARTILHADO);
+	}
+
+	void detalhes() {
+	}
+}
+
+abstract class Host4 extends AbstractHosts {
+	Host4(String n) {
+		super(n, TipoHosts.CLOUD);
+	}
+
+	void detalhes() {
+	}
+}
+
+abstract class Host5 extends AbstractHosts {
+	Host5(String n) {
+		super(n, TipoHosts.EDGE);
+	}
+
+	void detalhes() {
+	}
+}
+
+abstract class Host6 extends AbstractHosts {
+	Host6(String n) {
+		super(n, TipoHosts.COLOCATION);
+	}
+
+	void detalhes() {
+	}
+}
+
+abstract class Host7 extends AbstractHosts {
+	Host7(String n) {
+		super(n, TipoHosts.BARE_METAL);
+	}
+
+	void detalhes() {
+	}
+}
+
+abstract class Host8 extends AbstractHosts {
+	Host8(String n) {
+		super(n, TipoHosts.CONTAINER);
+	}
+
+	void detalhes() {
+	}
+}
+
+abstract class Host9 extends AbstractHosts {
+	Host9(String n) {
+		super(n, TipoHosts.SERVERLESS);
+	}
+
+	void detalhes() {
+	}
+}
+
+abstract class Host10 extends AbstractHosts {
+	Host10(String n) {
+		super(n, TipoHosts.LAMBDA);
+	}
+
+	void detalhes() {
+	}
+}
+
+class Import_5V {
+	private static String[][] hosts = new String[10][2];
+	private static int count = 0;
+	private static ReentrantLock lock = new ReentrantLock();
+
+	// Método de ordenação
+	public static void ordenar() {
+		Arrays.sort(hosts, (a, b) -> a[0] != null && b[0] != null ? a[0].compareTo(b[0]) : 0);
+	}
+
+	// Método de busca
+	public static int buscar(String nome) {
+		for (int i = 0; i < count; i++) {
+			if (hosts[i][0].equalsIgnoreCase(nome)) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	public static void run_Import_5V() {
+
+		Scanner scanner = new Scanner(System.in);
+		int opcao;
+
+		do {
+			System.out.println("1. Adicionar Host");
+			System.out.println("2. Listar Hosts");
+			System.out.println("3. Buscar Host");
+			System.out.println("4. Ordenar Hosts");
+			System.out.println("5. Sair");
+			System.out.print("Escolha uma opção: ");
+			opcao = scanner.nextInt();
+			scanner.nextLine();
+
+			switch (opcao) {
+			case 1:
+				if (count >= 10) {
+					System.out.println("Lista cheia!");
+					break;
+				}
+				System.out.print("Nome do Host: ");
+				String nome = scanner.nextLine();
+				System.out.print("Tipo (0-9): ");
+				int tipoIndex = scanner.nextInt();
+				scanner.nextLine();
+
+				if (tipoIndex < 0 || tipoIndex >= TipoHost.values().length) {
+					System.out.println("Tipo inválido!");
+					break;
+				}
+
+				lock.lock();
+				try {
+					hosts[count][0] = nome;
+					hosts[count][1] = TipoHost.values()[tipoIndex].name();
+					count++;
+				} finally {
+					lock.unlock();
+				}
+				System.out.println("Host adicionado!");
+				break;
+
+			case 2:
+				for (int i = 0; i < count; i++) {
+					System.out.println("Nome: " + hosts[i][0] + " | Tipo: " + hosts[i][1]);
+				}
+				break;
+
+			case 3:
+				System.out.print("Digite o nome do Host para buscar: ");
+				String nomeBusca = scanner.nextLine();
+				int index = buscar(nomeBusca);
+				if (index != -1) {
+					System.out.println("Encontrado: " + hosts[index][0] + " | Tipo: " + hosts[index][1]);
+				} else {
+					System.out.println("Host não encontrado.");
+				}
+				break;
+
+			case 4:
+				ordenar();
+				System.out.println("Hosts ordenados!");
+				break;
+
+			case 5:
+				System.out.println("Saindo...");
+				break;
+
+			default:
+				System.out.println("Opção inválida!");
+			}
+		} while (opcao != 5);
+		VoutarRun voutarRun = new VoutarRun();
+		voutarRun.run_CaracteresMenu_Red();
+
 	}
 }

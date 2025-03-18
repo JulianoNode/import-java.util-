@@ -35,19 +35,19 @@ public class Run_Iterator {
 
 			switch (choice) {
 			case 1:
-				Simples.Simples_Run();
+				Simples2.Simples_Run();
 				break;
 
 			case 2:
-				If_Else_IF.If_Else_IF_Run();
+				If_Else_IF2.If_Else_IF_Run();
 				break;
 
 			case 3:
-				For_Matrix.For_Run();
+				For_Matrix2.For_Run();
 				break;
 
 			case 4:
-				While_Matrix.While_Run();
+				While_Matrix2.While_Run();
 				break;
 
 			case 5:
