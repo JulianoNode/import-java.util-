@@ -42,20 +42,20 @@ enum Acao3 {
 
 //Classe abstrata para definir o comportamento comum dos livros
 abstract class Livro {
-	private String titulo;
+	private String nome;
 	private String autor;
 	private Categoria3 categoria;
 	private Status3 status;
 
-	public Livro(String titulo, String autor, Categoria3 categoria, Status3 status) {
-		this.titulo = titulo;
+	public Livro(String nome, String autor, Categoria3 categoria, Status3 status) {
+		this.nome = nome;
 		this.autor = autor;
 		this.categoria = categoria;
 		this.status = status;
 	}
 
-	public String getTitulo() {
-		return titulo;
+	public String getnome() {
+		return nome;
 	}
 
 	public String getAutor() {
@@ -76,15 +76,15 @@ abstract class Livro {
 
 	@Override
 	public String toString() {
-		return "Livro{" + "titulo='" + titulo + '\'' + ", autor='" + autor + '\'' + ", categoria=" + categoria
+		return "Livro{" + "nome='" + nome + '\'' + ", autor='" + autor + '\'' + ", categoria=" + categoria
 				+ ", status=" + status + '}';
 	}
 }
 
 //Classe concreta para representar um livro específico
 class LivroConcreto extends Livro {
-	public LivroConcreto(String titulo, String autor, Categoria3 categoria, Status3 status) {
-		super(titulo, autor, categoria, status);
+	public LivroConcreto(String nome, String autor, Categoria3 categoria, Status3 status) {
+		super(nome, autor, categoria, status);
 	}
 }
 
@@ -110,11 +110,11 @@ class Biblioteca {
 	}
 
 	// Ler
-	public Livro lerLivro(String titulo) {
+	public Livro lerLivro(String nome) {
 		lock.lock();
 		try {
 			for (Livro livro : livros) {
-				if (livro.getTitulo().equalsIgnoreCase(titulo)) {
+				if (livro.getnome().equalsIgnoreCase(nome)) {
 					System.out.println("Livro encontrado: " + livro);
 					return livro;
 				}
@@ -127,10 +127,10 @@ class Biblioteca {
 	}
 
 	// Atualizar
-	public void atualizarStatus(String titulo, Status3 novoStatus) {
+	public void atualizarStatus(String nome, Status3 novoStatus) {
 		lock.lock();
 		try {
-			Livro livro = lerLivro(titulo);
+			Livro livro = lerLivro(nome);
 			if (livro != null) {
 				livro.setStatus(novoStatus);
 				System.out.println("Status atualizado para: " + livro);
@@ -141,10 +141,10 @@ class Biblioteca {
 	}
 
 	// Deletar
-	public void deletarLivro(String titulo) {
+	public void deletarLivro(String nome) {
 		lock.lock();
 		try {
-			Livro livro = lerLivro(titulo);
+			Livro livro = lerLivro(nome);
 			if (livro != null) {
 				livros.remove(livro);
 				System.out.println("Livro deletado: " + livro);
@@ -155,10 +155,10 @@ class Biblioteca {
 	}
 
 	// Ordenação por título
-	public void ordenarLivrosPorTitulo() {
+	public void ordenarLivrosPornome() {
 		lock.lock();
 		try {
-			livros.sort(Comparator.comparing(Livro::getTitulo));
+			livros.sort(Comparator.comparing(Livro::getnome));
 			System.out.println("Livros ordenados por título:");
 			livros.forEach(System.out::println);
 		} finally {
@@ -207,7 +207,7 @@ class Import_1S {
 		biblioteca.criarLivro(livro3);
 
 		// Ordenação por título
-		biblioteca.ordenarLivrosPorTitulo();
+		biblioteca.ordenarLivrosPornome();
 
 		// Buscar por categoria
 		biblioteca.buscarPorCategoria(Categoria3.FICCAO);
@@ -243,13 +243,13 @@ enum PrioridadeTempo {
 
 //Classe Abstrata para Video
 abstract class Video {
-	protected String titulo;
+	protected String nome;
 	protected EstadoVideo estado;
 	protected TipoVideo tipo;
 	protected PrioridadeTempo prioridade;
 
-	public Video(String titulo, EstadoVideo estado, TipoVideo tipo, PrioridadeTempo prioridade) {
-		this.titulo = titulo;
+	public Video(String nome, EstadoVideo estado, TipoVideo tipo, PrioridadeTempo prioridade) {
+		this.nome = nome;
 		this.estado = estado;
 		this.tipo = tipo;
 		this.prioridade = prioridade;
@@ -258,8 +258,8 @@ abstract class Video {
 	public abstract void exibirInfo();
 
 	// Getters e Setters
-	public String getTitulo() {
-		return titulo;
+	public String getnome() {
+		return nome;
 	}
 
 	public EstadoVideo getEstado() {
@@ -283,15 +283,15 @@ abstract class Video {
 class VideoTemporizado extends Video {
 	private int duracao;
 
-	public VideoTemporizado(String titulo, EstadoVideo estado, TipoVideo tipo, PrioridadeTempo prioridade,
+	public VideoTemporizado(String nome, EstadoVideo estado, TipoVideo tipo, PrioridadeTempo prioridade,
 			int duracao) {
-		super(titulo, estado, tipo, prioridade);
+		super(nome, estado, tipo, prioridade);
 		this.duracao = duracao;
 	}
 
 	@Override
 	public void exibirInfo() {
-		System.out.println("Título: " + titulo);
+		System.out.println("Título: " + nome);
 		System.out.println("Estado: " + estado);
 		System.out.println("Tipo: " + tipo);
 		System.out.println("Prioridade: " + prioridade);
@@ -365,11 +365,11 @@ class CRUDVideos {
 	}
 
 	// Método para buscar vídeo por título
-	public synchronized VideoTemporizado buscarPorTitulo(String titulo) {
+	public synchronized VideoTemporizado buscarPornome(String nome) {
 		lock.lock();
 		try {
 			for (VideoTemporizado video : videos) {
-				if (video.getTitulo().equalsIgnoreCase(titulo)) {
+				if (video.getnome().equalsIgnoreCase(nome)) {
 					return video;
 				}
 			}
@@ -425,7 +425,7 @@ class Import_2S {
 
 		// Buscando por título
 		System.out.println("Buscando por título 'Filme Educativo':");
-		VideoTemporizado video = crudVideos.buscarPorTitulo("Filme Educativo");
+		VideoTemporizado video = crudVideos.buscarPornome("Filme Educativo");
 		if (video != null) {
 			video.exibirInfo();
 		} else {

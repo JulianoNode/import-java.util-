@@ -1,0 +1,173 @@
+1. Comandos DDL (Data Definition Language) - Definição de Dados
+Usados para criar e modificar a estrutura do banco de dados.
+
+CREATE DATABASE – Cria um novo banco de dados.
+
+DROP DATABASE – Exclui um banco de dados.
+
+USE – Seleciona um banco de dados para usar.
+
+CREATE TABLE – Cria uma nova tabela.
+
+ALTER TABLE – Modifica a estrutura de uma tabela.
+
+DROP TABLE – Exclui uma tabela.
+
+TRUNCATE TABLE – Remove todos os registros de uma tabela sem excluir a estrutura.
+
+RENAME TABLE – Renomeia uma tabela.
+
+2. Comandos DML (Data Manipulation Language) - Manipulação de Dados
+Usados para inserir, atualizar, excluir e recuperar dados.
+
+SELECT – Recupera dados de uma tabela.
+
+INSERT INTO – Insere novos registros em uma tabela.
+
+UPDATE – Atualiza registros existentes.
+
+DELETE – Exclui registros de uma tabela.
+
+MERGE – Mescla dados de uma tabela em outra.
+
+3. Comandos DQL (Data Query Language) - Consulta de Dados
+Usados para consultar dados dentro de um banco de dados.
+
+SELECT – Obtém dados de uma ou mais tabelas.
+
+WHERE – Filtra registros com base em uma condição.
+
+GROUP BY – Agrupa registros com valores semelhantes.
+
+HAVING – Filtra grupos de registros.
+
+ORDER BY – Ordena registros com base em colunas específicas.
+
+LIMIT – Limita o número de registros retornados.
+
+OFFSET – Pula um número específico de registros antes de começar a exibição.
+
+4. Comandos DCL (Data Control Language) - Controle de Acesso
+Usados para conceder ou revogar permissões.
+
+GRANT – Concede permissões a um usuário.
+
+REVOKE – Remove permissões de um usuário.
+
+DENY – Nega permissões explicitamente.
+
+5. Comandos TCL (Transaction Control Language) - Controle de Transação
+Usados para gerenciar transações no banco de dados.
+
+COMMIT – Confirma as alterações feitas em uma transação.
+
+ROLLBACK – Desfaz as alterações feitas antes de um COMMIT.
+
+SAVEPOINT – Cria um ponto de salvamento dentro de uma transação.
+
+RELEASE SAVEPOINT – Remove um ponto de salvamento.
+
+SET TRANSACTION – Define as propriedades de uma transação.
+
+6. Operadores SQL
+São usados para realizar comparações e operações lógicas.
+
+Aritméticos: +, -, *, /, %
+
+Comparação: =, !=, <>, >, <, >=, <=, BETWEEN, LIKE, IN, IS NULL
+
+Lógicos: AND, OR, NOT, EXISTS
+
+Bitwise: &, |, ^, ~, <<, >>
+
+7. Funções SQL
+Usadas para realizar operações sobre dados.
+
+Funções de Agregação
+COUNT() – Retorna a quantidade de registros.
+
+SUM() – Retorna a soma dos valores.
+
+AVG() – Retorna a média dos valores.
+
+MIN() – Retorna o menor valor.
+
+MAX() – Retorna o maior valor.
+
+Funções de String
+UPPER() – Converte para maiúsculas.
+
+LOWER() – Converte para minúsculas.
+
+CONCAT() – Concatena strings.
+
+SUBSTRING() – Extrai parte de uma string.
+
+LENGTH() – Retorna o tamanho de uma string.
+
+Funções de Data e Hora
+NOW() – Retorna a data e hora atual.
+
+CURDATE() – Retorna a data atual.
+
+CURTIME() – Retorna a hora atual.
+
+DATEDIFF() – Calcula a diferença entre duas datas.
+
+DATE_ADD() – Adiciona um intervalo de tempo a uma data.
+
+DATE_SUB() – Subtrai um intervalo de tempo de uma data.
+
+Funções Numéricas
+ROUND() – Arredonda um número.
+
+FLOOR() – Arredonda para baixo.
+
+CEIL() – Arredonda para cima.
+
+ABS() – Retorna o valor absoluto.
+
+MOD() – Retorna o resto da divisão.
+
+8. Comandos de Índices e Chaves
+Usados para melhorar o desempenho e definir relacionamentos.
+
+CREATE INDEX – Cria um índice para acelerar buscas.
+
+DROP INDEX – Remove um índice.
+
+PRIMARY KEY – Define a chave primária.
+
+FOREIGN KEY – Define a chave estrangeira.
+
+UNIQUE – Garante que os valores em uma coluna sejam únicos.
+
+CHECK – Restringe valores permitidos em uma coluna.
+
+DEFAULT – Define um valor padrão para uma coluna.
+
+9. Junções (JOINS)
+Usadas para combinar dados de múltiplas tabelas.
+
+INNER JOIN – Retorna registros correspondentes em ambas as tabelas.
+
+LEFT JOIN – Retorna todos os registros da tabela esquerda e os correspondentes da direita.
+
+RIGHT JOIN – Retorna todos os registros da tabela direita e os correspondentes da esquerda.
+
+FULL JOIN – Retorna todos os registros de ambas as tabelas.
+
+CROSS JOIN – Retorna o produto cartesiano das tabelas.
+
+SELF JOIN – Faz um JOIN com a própria tabela.
+
+10. Subconsultas e Expressões Comuns
+Usadas para consultas mais avançadas.
+
+EXISTS – Verifica se uma subconsulta retorna algum resultado.
+
+ALL – Compara um valor com todos os valores retornados por uma subconsulta.
+
+ANY – Compara um valor com qualquer valor retornado por uma subconsulta.
+
+WITH – Define uma subconsulta nomeada (CTE - Common Table Expression).

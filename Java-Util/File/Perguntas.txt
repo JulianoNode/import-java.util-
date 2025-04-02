@@ -34,7 +34,7 @@ código complexo usando o tema é tipo de VPN e Endereço na Net Java, usando o 
 
 código fonte complexo usando o tema é Produto, nas condição calculo de valor do Produto, do Produto quantidade, " e carrinho, na Java: if , else if, else if, else if, else if, else usando o comando util.ListIterator, usando Classes do tipo * 3 Enum, 3 Abstract, 3 @interface* nível de código complexo, utilizando Métodos a ser implementados de sincronização com um usuário na rede
 
-
+código fonte complexo usando o tema é CPF e CNPJ, nas condição calculo de valor do estado e  valores diferentes de imposto, na Java: if , else if, else if, else if, else if, else, usando o comando util.ArryeyList, usando Classes do tipo * 3 Enum, 3 Abstract, * nível de código complexo para ENUM E ABSTRAC?
 
 
 

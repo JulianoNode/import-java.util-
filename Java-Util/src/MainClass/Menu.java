@@ -12,6 +12,7 @@ import UTIL_07_Collections.Run_Collections;
 import UTIL_08_Arrays.Run_Arrays;
 import UTIL_09_Iterator.Run_Iterator;
 import UTIL_10_ListInterator.Run_ListIterator;
+import UTIL_11_ArrayList.Run_ArrayList;
 import util.LimparConsole;
 import util.Pausar;
 
@@ -133,6 +134,7 @@ public class Menu {
 				clear.CleanConsole_Run();
 				break;
 			case 11:
+				Run_ArrayList.Start_ArrayList();
 				pausar.run_Pause();
 				clear.CleanConsole_Run();
 				break;
