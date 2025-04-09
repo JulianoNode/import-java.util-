@@ -13,6 +13,7 @@ import UTIL_08_Arrays.Run_Arrays;
 import UTIL_09_Iterator.Run_Iterator;
 import UTIL_10_ListInterator.Run_ListIterator;
 import UTIL_11_ArrayList.Run_ArrayList;
+import UTIL_12_LinkedList.Run_LinkedList;
 import util.LimparConsole;
 import util.Pausar;
 
@@ -139,6 +140,7 @@ public class Menu {
 				clear.CleanConsole_Run();
 				break;
 			case 12:
+				Run_LinkedList.Start_LinkedList();
 				pausar.run_Pause();
 				clear.CleanConsole_Run();
 				break;

@@ -18,8 +18,9 @@ public class Run_ArrayList {
 		Scanner scanner = new Scanner(System.in);
 
 		// Vetor de opções do menu
-		String[] menuOptions = { "📌 ArrayList = Simple", "📌 ArrayList = If e else if", "📌  = For com Matrix",
-				"📌 ArrayList = do while com Matrix", "📌 ArrayList = Vetor", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
+		String[] menuOptions = { "📌 ArrayList = Simple", "📌 ArrayList = If e else if",
+				"📌 ArrayList = For com Matrix", "📌 ArrayList = do while com Matrix", "📌 ArrayList = Vetor",
+				"📌 TransacaoDeConta", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
 
 		int choice;
 		do {
@@ -34,6 +35,7 @@ public class Run_ArrayList {
 			scanner.nextLine(); // Consumir o '\n'
 
 			switch (choice) {
+
 			case 1:
 				Simples.Simples_Run();
 				break;
@@ -54,14 +56,18 @@ public class Run_ArrayList {
 				Vetor_.Vetor_Run();
 				break;
 
-			case 6: // Voutar para o MEUNU
+			case 6:
+				TransacaoDeConta.TransacaoDeConta_Run();
+				break;
+
+			case 7: // Voutar para o MEUNU
 				VoutarMenu voutarMenu = new VoutarMenu();
 				voutarMenu.run_CaracteresMenu_Red();
 				System.out.println("\n\n");
 				Menu.Meun_Run();
 
 				break;
-			case 7:
+			case 8:
 				VoutarRun voutarRun = new VoutarRun();
 				voutarRun.run_CaracteresMenu_Red();
 				break;

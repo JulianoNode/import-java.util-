@@ -58,7 +58,7 @@ enum TipoConta {
 
 // Enum para os tipos de agência
 enum Agencia {
-    CENTRAL, FILIAL1, FILIAL2;
+    CENTRAL, FILIAL1, FILIAL2, PREMIUM;
 }
 
 // Enum para status de login

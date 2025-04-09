@@ -36,7 +36,7 @@ código fonte complexo usando o tema é Produto, nas condição calculo de valor
 
 código fonte complexo usando o tema é CPF e CNPJ, nas condição calculo de valor do estado e  valores diferentes de imposto, na Java: if , else if, else if, else if, else if, else, usando o comando util.ArryeyList, usando Classes do tipo * 3 Enum, 3 Abstract, * nível de código complexo para ENUM E ABSTRAC?
 
-
+código usando if , else if, else if, for, com vetor, While, swith case com Vetores na matrix e o tema é Login com agencia Perfil e conta de banco em n transação de uma conta para a outra, em Java e usando o comando util.LinkedList, usando códigos Nível Hard= * 5 Enum com Metodos e  classe  Abstract * , Métodos a ser emplastados sincronização,
 
 
 

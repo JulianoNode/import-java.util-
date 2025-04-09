@@ -1,6 +1,6 @@
 package MainClass;
 
-public class MainList {
+public class MainStart {
 	public static void main(String[] args) throws Exception {		
 	Menu.Meun_Run();
 	}

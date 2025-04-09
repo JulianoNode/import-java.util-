@@ -8,18 +8,19 @@ import util.Pausar;
 import util.VoutarMenu;
 import util.VoutarRun;
 
-public class Run_ {
+public class Run_LinkedList {
 
 	@SuppressWarnings("unused")
-	public static void Start_() throws Exception {
+	public static void Start_LinkedList() throws Exception {
 
 		Pausar pausar = new Pausar();
 		LimparConsole clear = new LimparConsole();
 		Scanner scanner = new Scanner(System.in);
 
 		// Vetor de opções do menu
-		String[] menuOptions = { "📌  = Simple", "📌  = If e else if", "📌  = For com Matrix",
-				"📌  = do while com Matrix", "📌  = Vetor", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
+		String[] menuOptions = { "📌 LinkedList = Simple", "📌 LinkedList = If e else if",
+				"📌 LinkedList = For com Matrix", "📌 LinkedList = do while com Matrix", "📌 LinkedList = Vetor",
+				"⏪ Voutar para o menu", "👋 Sair 👋 \n" };
 
 		int choice;
 		do {
