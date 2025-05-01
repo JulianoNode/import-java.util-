@@ -52,7 +52,7 @@ public class Run_LinkedList {
 				break;
 
 			case 5:
-				Vetor_.Vetor_Run();
+				Vetor_Set.Vetor_Run();
 				break;
 
 			case 6: // Voutar para o MEUNU

@@ -8,18 +8,18 @@ import util.Pausar;
 import util.VoutarMenu;
 import util.VoutarRun;
 
-public class Run_ {
+public class Run_HashSet {
 
 	@SuppressWarnings("unused")
-	public static void Start_() throws Exception {
+	public static void Start_HashSet() throws Exception {
 
 		Pausar pausar = new Pausar();
 		LimparConsole clear = new LimparConsole();
 		Scanner scanner = new Scanner(System.in);
 
 		// Vetor de opções do menu
-		String[] menuOptions = { "📌  = Simple", "📌  = If e else if", "📌  = For com Matrix",
-				"📌  = do while com Matrix", "📌  = Vetor", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
+		String[] menuOptions = { "📌 HashSet = Simple", "📌 HashSet = If e else if", "📌 HashSet = For com Matrix",
+				"📌 HashSet = do while com Matrix", "📌 HashSet = Vetor", "⏪ Voutar para o menu", "👋 Sair 👋 \n" };
 
 		int choice;
 		do {
@@ -51,7 +51,7 @@ public class Run_ {
 				break;
 
 			case 5:
-				Vetor_.Vetor_Run();
+				Vetor_Set.Vetor_Run();
 				break;
 
 			case 6: // Voutar para o MEUNU

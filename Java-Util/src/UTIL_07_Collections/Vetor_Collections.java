@@ -6,7 +6,7 @@ import util.VoutarRun;
 import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Vetor_ {
+public class Vetor_Collections {
 	public static void Vetor_Run() {
 
 		Linhas linhas = new Linhas();
@@ -606,4 +606,3 @@ class ConversorMoeda extends Conversor {
 		return valor * (taxas.get(para) / taxas.get(de));
 	}
 }
-

@@ -52,7 +52,7 @@ public class Run_Collections {
 				break;
 
 			case 5:
-				Vetor_.Vetor_Run();
+				Vetor_Collections.Vetor_Run();
 				break;
 
 			case 6:

@@ -6,7 +6,7 @@ import util.VoutarMenu;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Vetor_ {
+public class Vetor_Set {
 	public static void Vetor_Run() {
 
 		Linhas linhas = new Linhas();
