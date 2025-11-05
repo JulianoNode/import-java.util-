@@ -22,7 +22,7 @@ public class Vetor_ {
 
 		linhas.run_Caracteres();
 		Import_3V.run_Import_3V();
-		
+
 		linhas.run_Caracteres();
 		Import_3VP.run_Import_3VP();
 	}
@@ -705,7 +705,7 @@ class CartaoCreditoPremium extends CartaoCreditov {
 	}
 
 	public void realizarPagamentoSincronizado(int i, int parcela) {
-		
+
 	}
 }
 

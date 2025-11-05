@@ -104,7 +104,10 @@ class Import_2V {
 			}
 		} while (opcao != 3);
 
-		scanner.close();
+		// 🚫 NÃO use sc.close() se for continuar lendo System.in depois!
+		if (scanner != null) {
+			scanner = null; // libera o scanner sem fechar System.in
+		}
 
 	}
 }
@@ -158,8 +161,10 @@ class Import_3V {
 				System.out.println("Opção inválida, tente novamente.");
 			}
 		} while (opcao != 3);
-
-		scanner.close();
+		// 🚫 NÃO use sc.close() se for continuar lendo System.in depois!
+		if (scanner != null) {
+			scanner = null; // libera o scanner sem fechar System.in
+		}
 
 	}
 }

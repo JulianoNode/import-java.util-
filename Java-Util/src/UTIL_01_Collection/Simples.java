@@ -83,7 +83,7 @@ class Import_2S {
 
 		// Exibindo a coleção
 		System.out.println("Coleção de números (ordem de prioridade): " + numeros);
-;
+
 	}
 }
 

@@ -17,7 +17,7 @@ public class Vetor_ {
 
 		linhas.run_Caracteres();
 		Import_5V.run_Import_5V();
-		
+
 		linhas.run_Caracteres();
 		Import_1V.run_Import_1V();
 

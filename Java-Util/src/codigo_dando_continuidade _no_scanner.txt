@@ -1,0 +1,9 @@
+	////////////////////////////////////////////////////////
+		} while (opcao != 0);
+
+		// 🚫 NÃO use sc.close() se for continuar lendo System.in depois!
+		if (sc != null) {
+			sc = null; // libera o scanner sem fechar System.in
+		}
+
+	}

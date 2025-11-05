@@ -1,3 +1,4 @@
+
 package UTIL_07_Collections;
 
 import util.Linhas;
@@ -41,6 +42,7 @@ class Import_1V {
 					"\n1. Adicionar Produto\n2. Remover Produto\n3. Buscar Produto\n4. Listar Produtos\n5. Ordenar por Preço\n6. Sair");
 			System.out.print("Escolha uma opção: ");
 			opcao = scanner.nextInt();
+			
 			scanner.nextLine();
 
 			switch (opcao) {

@@ -8,14 +8,16 @@ import util.Pausar;
 import util.VoutarMenu;
 import util.VoutarRun;
 
-public class Run_ {
+public class Run_LinkedhashSet {
 
 	@SuppressWarnings("unused")
-	public static void Start_() throws Exception {
+	public static void Start_LinkedhashSet() throws Exception {
 
 		Pausar pausar = new Pausar();
 		LimparConsole clear = new LimparConsole();
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = null;
+
+		scanner = new Scanner(System.in);
 
 		// Vetor de opções do menu
 		String[] menuOptions = { "📌  = Simple", "📌  = If e else if", "📌  = For com Matrix",
@@ -30,6 +32,12 @@ public class Run_ {
 			}
 
 			System.out.print("Escolha uma opção: ");
+			while (!scanner.hasNextInt()) {
+				System.out.println("Por favor, insira um número válido!");
+				scanner.next(); // Limpa entrada inválida
+				System.out.print("Escolha uma opção: ");
+			}
+
 			choice = scanner.nextInt();
 			scanner.nextLine(); // Consumir o '\n'
 
@@ -54,25 +62,23 @@ public class Run_ {
 				Vetor_.Vetor_Run();
 				break;
 
-			case 6: // Voutar para o MEUNU
+			case 6: // Voltar ao menu
 				VoutarMenu voutarMenu = new VoutarMenu();
 				voutarMenu.run_CaracteresMenu_Red();
 				System.out.println("\n\n");
 				Menu.Meun_Run();
-
 				break;
+
 			case 7:
 				VoutarRun voutarRun = new VoutarRun();
 				voutarRun.run_CaracteresMenu_Red();
 				break;
 
 			default:
-				System.out.println("Opção inválida. Tente novamente.");
+				System.out.println("⚠️  Opção inválida. Tente novamente.");
 				break;
 			}
 		} while (choice != 7);
 
-		VoutarRun voutarRun = new VoutarRun();
-		voutarRun.run_CaracteresMenu_Red();
 	}
 }

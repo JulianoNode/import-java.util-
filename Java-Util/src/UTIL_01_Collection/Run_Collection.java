@@ -71,6 +71,11 @@ public class Run_Collection {
 				break;
 			}
 		} while (choice != 7);
+		
+		// 🚫 NÃO use sc.close() se for continuar lendo System.in depois!
+		if (scanner != null) {
+			scanner = null; // libera o scanner sem fechar System.in
+		}
 
 		VoutarRun voutarRun = new VoutarRun();
 		voutarRun.run_CaracteresMenu_Red();

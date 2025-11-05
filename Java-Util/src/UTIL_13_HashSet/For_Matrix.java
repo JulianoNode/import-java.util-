@@ -214,6 +214,7 @@ class SistemaLoginObra {
 
 		System.out.println("Bem-vindo ao Sistema de Login da Construção Civil!");
 
+		@SuppressWarnings("unused")
 		int opcao = 0;
 		boolean logado = false;
 

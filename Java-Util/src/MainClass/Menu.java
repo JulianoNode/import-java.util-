@@ -15,6 +15,7 @@ import UTIL_10_ListInterator.Run_ListIterator;
 import UTIL_11_ArrayList.Run_ArrayList;
 import UTIL_12_LinkedList.Run_LinkedList;
 import UTIL_13_HashSet.Run_HashSet;
+import UTIL_14_LinkedhashSet.Run_LinkedhashSet;
 import util.LimparConsole;
 import util.Pausar;
 
@@ -149,6 +150,7 @@ public class Menu {
 				clear.CleanConsole_Run();
 				break;
 			case 14:
+				Run_LinkedhashSet.Start_LinkedhashSet();
 				pausar.run_Pause();
 				clear.CleanConsole_Run();
 				break;

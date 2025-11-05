@@ -1,0 +1,10 @@
+===== METADADOS DA IMAGEM =====
+Nome: foto2
+Tipo: .png
+
+=== Metadados ===
+GPS -> Latitude:-23.55, Longitude:-46.63
+CAMERA -> Nikon D7500
+
+=== Tags ===
+===============================

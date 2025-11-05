@@ -1,0 +1,11 @@
+===== METADADOS DA IMAGEM =====
+Nome: foto1
+Tipo: .jpeg
+
+=== Metadados ===
+CAMERA -> Canon EOS
+EXIF -> Data: 2025-01-01
+
+=== Tags ===
+- Editado via Sistema Hard
+===============================
